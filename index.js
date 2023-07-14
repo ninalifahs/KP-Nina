@@ -2,9 +2,7 @@ const express = require("express");
 const app = express();
 
 app.get("/", (req, res) => {
-  const html = `<h1>Hello World</h1>
-  <p>My Pod Name: ${process.env.MY_POD_NAME}</p>
-  <p>My Application Name: ${process.env.MY_APPLICATION_NAME}</p>`;
+  const html = `<h1>Hello World</h1>`;
 
   res.status(200).send(html);
 });
